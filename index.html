@@ -1,33 +1,124 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Army of Dead</title>
-    </head>
-    <body>
-        <header>
-            <h1>Zombie</h1>
-            <nav class="menu">
-                <ul>
-                    <a href=""><li>Accueil</li></a>
-                    <a href=""><li>A propos</li></a>
-                    <a href=""><li>Parcours</li></a>
-                    <a href=""><li>Contact</li></a>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur eveniet nesciunt veritatis ad repellendus sapiente nobis eaque, esse eius, illo possimus sed excepturi nemo temporibus eos, error blanditiis dicta.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Army of Dead</title>
+  </head>
+  <body>
+    <header>
+      <h1>Zom<span class="logo">B</span>ie</h1>
+      <nav class="menu">
+        <ul>
+          <li><a href="#home-link" class="active">Accueil</a></li>
+          <li><a href="#about-link">A propos</a></li>
+          <li><a href="#contact-link">Conctact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home-link" class="accueil">
+        <div class="accueil-content">
+          <div class="textaccueil">
+            <h1>Mamadou Aliou Baldé</h1>
+            <h2>Developpeur front-end</h2>
+            <p>
+              Je suis étudiant en licence 2 à UNC, mes hobbies sont les femmes😶,
+              les MANGAS et le code Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Facilis accusantium, quasi vero temporibus autem
+              quidem nihil. Ut blanditiis, iusto ad velit quod consectetur
+              deleniti incidunt et molestias repellendus minus laboriosam commodi
+              quibusdam iste fugit impedit in ipsum magnam dignissimos quasi
+              quidem unde error voluptates! Autem repellat labore pariatur hic
+              officia.
+            </p>
+            <button class="more">En savoir plus</button>
+          </div>
+          <div>
+            <img src="img/photo.jpg" alt="ma photo" class="image" />
+          </div>
+        </div>
+      </section>
+      <section id="about-link" class="apropos">
+        <div>
+          <h2 class="text-apropos">A propos</h2>
+          <div class="element">
+            <div class="progression">
+              <h2>Langage Web</h2>
+              <br />
+              <span>HTML&CSS</span><br />
+              <progress value="20" max="50"></progress><br />
+              <span>JavaScript</span><br/>
+              <progress value="20" max="50"></progress><br /><br>
+              <h2>Autre Langage</h2>
+              <br />
+              <span>Langage C</span><br />
+              <progress value="20" max="50"></progress><br />
+              <span>JAVA</span><br />
+              <progress value="20" max="50"></progress><br />
+              <span>C++</span><br />
+              <progress value="20" max="50"></progress>
             </div>
-        </main>
-
-        <footer>
-            <div>Copyright &copy; Zombie - droit reservé</div>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+            <div class="paragraphe">
+              <p>
+                Salut ! Je suis Mamadou Aliou Baldé, un passionné de
+                développement front-end et étudiant en licence 2 à l'UNC. Entre
+                les lignes de code et les pages de mes mangas préférés, je
+                trouve mon équilibre. Depuis que j'ai découvert le monde du
+                développement web, je suis fasciné par sa capacité à transformer
+                des idées en réalité numérique. Chaque projet est une
+                opportunité d'apprentissage et d'expression créative pour moi.
+                Quand je ne suis pas absorbé par mon écran, vous me trouverez
+                peut-être en train de discuter avec des amis autour d'un café ou
+                plongé dans un nouvel épisode de mon manga favori. Mon objectif
+                est de combiner ma passion pour le code avec mon amour pour le
+                design et la convivialité pour créer des expériences web
+                mémorables et engageantes. Rejoignez-moi dans cette aventure où
+                la technologie rencontre l'art, et explorons ensemble les
+                possibilités infinies du développement front-end.
+              </p>
+              <div class="btn">
+                <button>Me contacter</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact-link" class="contact">
+       <div class="center">
+        <h2 class="contact-me">Contactez Moi</h2>
+        <form>
+          <div class="first-child">
+            <div class="form-item">
+              <label for="nom" class="mouve">Nom</label>
+              <input type="text" id="nom" required/>
+            </div>
+            <div class="form-item">
+              <label for="email" class="mouve">Email</label>
+              <input type="email" id="email" required/>
+            </div>
+          </div>
+          <div class="form-item">
+            <label for="commentaire">Votre message</label>
+            <textarea
+              name="commentaire"
+              id="commentaire"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <div class="submit">
+            <button type="submit">Envoyer</button>
+          </div>
+        </form>
+       </div>
+      </section>
+    </main>
+    <footer>
+      <div>Copyright &copy; Zombie - droit reservé</div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,29 +1,239 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
 }
-/*Pour le header*/
+body
+{
+    color: #fff;
+}
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.logo
+{
+    color: red;
+    font-family: 'Times New Roman';
+    font-size: 40px;
+}
+
+.active
+{
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+}
+
+/*----------------------Pour le header-------------------------------------*/
+header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    background-color: #021024;
+    width: 100vw;
+}
 header h1 {
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 40px;
+    padding-top: 10px;
+}
+
+nav ul
+{
+    display: flex;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+}
+
+/*------------------------ Pour l'accueil -------------------------------------*/
+.accueil
+{
+    display: flex;
+    background-color: #052659;
+    color: #fff;
+    height: 100vh;
+}
+.accueil-content
+{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
-    margin-right: 0;
 }
-nav ul {
-    list-style-type: none;
+.image
+{
+    width: 320px;
+    border-radius: 10px;
+}
+.textaccueil
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-left: 120px;
+    margin-right: 80px;
+}
+.more
+{
+    font-size: 16px;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    background-color: #021024;
+    cursor: pointer;
+    color: #fff;
+}
+.more:hover
+{
+    padding: 16px;
+   
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+section div h1
+{
+    font-size: 2.8em;
+}
+section div h2
+{
+    font-size: 2.4em;
+}
+section div p 
+{
+    line-height: 1.5em;
+    max-width: 600px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: royalblue;
-    margin:0 20px;
-    
+/* -----------A propos --------------------*/
+
+.apropos{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5483B3;
+}
+.text-apropos
+{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.element
+{
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+.progression h2 {
+    font-size: 20px;
+}
+.paragraphe
+{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 45px;
+}
+.btn button
+{
+   padding: 14px;
+   border: none;
+   cursor: pointer;
+   border-radius: 50px;
+   font-size: 16px;
+   background-color: #021024;
+   color: #fff;
+}
+
+.btn button:hover{
+    padding: 16px;
+}
+
+
+/*-------------------------------Contact-----------------------------------*/
+.contact
+{
+    color: #fff;
+    height: 79vh;
+    background-color: #052659;
+}
+
+.contact-me
+{
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0 40px;
+}
+
+.contact form 
+{
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact form .first-child 
+{
+    display: flex;
+    gap: 20px;
+}
+
+.contact form .first-child .form-item 
+{
+    flex: 1;
+}
+
+.form-item 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-item input, .form-item textarea
+{
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+}
+
+.submit
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit button
+{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 170px;
+}
+
+
+/*------------------Footer------------------------*/
+footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-color: #7DA0CA;
 }
